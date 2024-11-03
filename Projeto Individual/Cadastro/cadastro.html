@@ -9,22 +9,22 @@
 <body>
     <nav class="navbar">
         <div class="containere">
-            <img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (1).png"  width="50" height="auto" alt="Logo">
+            <img src="C:\Users\Usuario-pc\Downloads\images-removebg-preview (1).png"  width="50" height="auto" alt="Logo">
           </div>
     <ul class="nav-links">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Jogos</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a onclick="inicio()" href="../Login/login.html">Início</a></li>
+        <li><a onclick="jogos()" href="../">Jogos</a></li>
+        <li><a onclick="dashboard()"  href="#">Dashboard</a></li>
+        <li><a onclick="sobre()"  href="#">Sobre</a></li>
+        <li><a onclick="contato()"  href="#">Contato</a></li>
     </ul>
     <div class="user">
         <a href="../Login/login.html"><img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (3).png" width="50" height="auto"></a>
     </div>
                 
 </nav>
-
-  <img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (1).png" alt="PlayStation Logo" class="logo">
+        
+  <img src="C:\Users\Usuario-pc\Downloads\images-removebg-preview (1).png" alt="PlayStation Logo" class="logo">
     <div class="container">
         <div class="login-box">
             <h2>Cadastro</h2>
@@ -73,4 +73,14 @@
             passwordInput2.setAttribute('type', type);
             togglePassword2.textContent = type === 'password' ? '👁️' : '🙈'; // Muda o ícone
         });
+
+        function inicio(){
+            alert('Faça o login ou cadastro para ter acesso a essa página')
+        } function jogos(){
+            alert('Faça o login ou cadastro para ter acesso a essa página')
+        }function dashboard(){
+            alert('Faça o login ou cadastro para ter acesso a essa página')
+        } function jogos(){
+            alert('Faça o login ou cadastro para ter acesso a essa página')
+        }
     </script>
