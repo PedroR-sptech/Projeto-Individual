@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, black 50%, red);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {    
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+.login-box {
+    background-color: #2b2b2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #ffffff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3000094;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+button:hover {
+    background-color: #6b0000;
+    transform: scale(1.1) rotate(2deg); /* Aumenta e gira o botão */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+}
+.footer {
+    margin-top: 15px;
+}
+
+.footer a {
+    color: #0070f3;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: rgb(255, 251, 0);
+}
+img{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.containere{
+    
+    position: absolute;
+    top: 50%;
+    left: 14%;
+    z-index: 1;
+
+}
+.navbar {
+    display: flex; 
+    background-color: #2b2b2b;
+    padding: 15px 20px;
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0;         /* Alinha ao topo da página */
+    width: 100%;    /* Faz com que a navbar ocupe toda a largura */
+    z-index: 1000;  /* Garante que a navbar fique acima de outros elementos */
+    justify-content: center;
+}
+
+
+.logo img {
+
+    height: 60px; /* Altura da imagem */
+
+}
+.nav-links {
+    list-style: none;
+    display: flex; /* Exibe os itens em linha */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #f300008f; /* Cor ao passar o mouse */
+    border-radius: 5px;
+}
+
+.user{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    z-index: 1;
+
+}
+.eye-icon {
+    position: absolute;
+    right: 14%;
+    top: 56%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.eye-icon2 {
+    position: absolute;
+    right: 14%;
+    top: 71.7%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

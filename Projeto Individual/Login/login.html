@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PlayStation Theme</title>
+    <link rel="stylesheet" href="Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="containere">
+            <img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (1).png"  width="50" height="auto" alt="Logo">
+          </div>
+    <ul class="nav-links">
+        <li><a href="../Inicio/inicio.html">Início</a></li>
+        <li><a href="#">Jogos</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+    </ul>
+    <div class="user">
+        <a href="login.html"><img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (3).png" width="50" height="auto"></a>
+    </div>
+
+    
+</nav>
+
+  <img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (1).png" alt="PlayStation Logo" class="logo">
+    <div class="container">
+        <div class="login-box">
+            <h2>Login</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" required>
+                    <span class="eye-icon" id="togglePassword">👁️</span>
+                    
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="footer">Não tem uma conta? <a href="../Cadastro/cadastro.html">Cadastre-se</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+var togglePassword = document.getElementById('togglePassword');
+        var passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            var type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.textContent = type === 'password' ? '👁️' : '🙈'; // Muda o ícone
+        });
+</script>
