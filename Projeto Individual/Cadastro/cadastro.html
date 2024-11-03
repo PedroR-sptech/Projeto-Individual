@@ -40,13 +40,13 @@
                 <div class="input-group">
                     <label for="password">Criar Senha</label>
                     <input type="password"  id="password" placeholder="Crie sua senha" required>
-                    <span class="eye-icon" id="togglePassword">👁️</span>
+                    
                 </div>
                 
                 <div class="input-group">
                     <label for="password">Confirmar senha</label>
                     <input type="password"  id="password2" placeholder="Crie sua senha" required>
-                    <span class="eye-icon2" id="togglePassword2">👁️</span>
+                    
                     
                 </div>
                 <button type="submit">Entrar</button>
@@ -57,23 +57,6 @@
 </body>
 </html>
  <script>
-        const togglePassword = document.getElementById('togglePassword');
-        const passwordInput = document.getElementById('password');
-
-        togglePassword.addEventListener('click', () => {
-            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-            togglePassword.textContent = type === 'password' ? '👁️' : '🙈'; // Muda o ícone
-        });
-        const togglePassword2 = document.getElementById('togglePassword2');
-        const passwordInput2 = document.getElementById('password2');
-
-        togglePassword2.addEventListener('click', () => {
-            const type = passwordInput2.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput2.setAttribute('type', type);
-            togglePassword2.textContent = type === 'password' ? '👁️' : '🙈'; // Muda o ícone
-        });
-
         function inicio(){
             alert('Faça o login ou cadastro para ter acesso a essa página')
         } function jogos(){

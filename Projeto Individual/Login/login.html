@@ -25,7 +25,7 @@
         <a href="login.html"><img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (3).png" width="50" height="auto"></a>
     </div>
     <div class="img-pc">
-      <img src="../Cadastro/video-game.svg" width="350" height="auto">
+      <img src="./video-game.svg" width="350" height="auto">
     </div>
     
     
@@ -41,28 +41,33 @@
             <form>
                 <div class="input-group">
                     <label for="username">Usuário</label>
-                    <input type="text" id="username" required>
+                    <input oninput="user()" type="text" id="input_username" placeholder="Usuário" required>
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" required>
-                    <span class="eye-icon" id="togglePassword">👁️</span>
-                    
+                    <input oninput="senha()" type="password" id="input_senha" placeholder="Senha" required>
+ 
                 </div>
+                <div id="div_mensagem" class="mensagem">ㅤ <br>ㅤ</div>
+                
                 <button type="submit">Entrar</button>
             </form>
             <p class="footer">Não tem uma conta? <a href="../Cadastro/cadastro.html">Cadastre-se</a></p>
         </div>
     </div>
+    
+    
 </body>
 </html>
 <script>
-var togglePassword = document.getElementById('togglePassword');
-        var passwordInput = document.getElementById('password');
-
-        togglePassword.addEventListener('click', () => {
-            var type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordInput.setAttribute('type', type);
-            togglePassword.textContent = type === 'password' ? '👁️' : '🙈'; // Muda o ícone
-        });
+    function senha(){
+    var mensagem = ``
+    var senha = input_senha.value
+    var tamanho_senha = senha.length
+    if (tamanho_senha <  8){
+        mensagem = `<span style = "color : red"> A senha deve conter ao menos 8 caracteres </span>`
+    } else{
+        mensagem = `ㅤ <br>ㅤ`
+    } div_mensagem.innerHTML = mensagem
+}
 </script>
