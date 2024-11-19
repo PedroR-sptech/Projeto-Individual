@@ -15,46 +15,58 @@
             <img src="C:\Users\Usuario-pc\Downloads\images-removebg-preview (1).png"  width="50" height="auto" alt="Logo">
           </div>
     <ul class="nav-links">
-        <li><a href="../Inicio/inicio.html">Início</a></li>
-        <li><a href="#">Jogos</a></li>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a onclick="inicio()" href="../Login/login.html">Início</a></li>
+        <li><a onclick="jogos()" href="../">Comunidade</a></li>
+        <li><a onclick="dashboard()"  href="#">Dashboard</a></li>
+        <li><a onclick="sobre()"  href="#">Sobre</a></li>
+        <li><a onclick="contato()"  href="#">Contato</a></li>
     </ul>
     <div class="user">
-        <a href="login.html"><img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (3).png" width="50" height="auto"></a>
+        <a href="../Login/login.html"><img src="C:\Users\Usuario-pc\Downloads\download-removebg-preview (3).png" width="50" height="auto"></a>
     </div>
-    <div class="img-pc">
-      <img src="./video-game.svg" width="350" height="auto">
-    </div>
-    
-    
+                
 </nav>
+<div class="img-pc">
+  <img src="./video-game.svg" width="350" height="auto">
+</div>
 <div class="textinho">
-    <h1>Faça o login<br>E entre para a nossa comunidade</h1>
+    <h1>Faça o login<br>E entre no meu universo Playstation</h1>
 </div>
 
   <img src="C:\Users\Usuario-pc\Downloads\images-removebg-preview (1).png" alt="PlayStation Logo" class="logo">
+
+
+  <div class="login">
+    <div class="alerta_erro">
+        <div class="card_erro" id="cardErro">
+            <span id="mensagem_erro"></span>
+        </div>
+    </div>
     <div class="container">
         <div class="login-box">
             <h2>Login</h2>
-            <form>
+            
                 <div class="input-group">
                     <label for="username">Usuário</label>
-                    <input oninput="user()" type="text" id="input_username" placeholder="Usuário" required>
+                    <input oninput="user()" type="text" id="email_input" placeholder="Usuário">
                 </div>
                 <div class="input-group">
                     <label for="password">Senha</label>
-                    <input oninput="senha()" type="password" id="input_senha" placeholder="Senha" required>
- 
+                    <input oninput="senha()" type="password" id="senha_input" placeholder="Senha">
                 </div>
                 <div id="div_mensagem" class="mensagem">ㅤ <br>ㅤ</div>
                 
-                <button type="submit">Entrar</button>
-            </form>
+                <button onclick="entrar()">Entrar</button>
+            
             <p class="footer">Não tem uma conta? <a href="../Cadastro/cadastro.html">Cadastre-se</a></p>
         </div>
     </div>
+    <div class="footer2">
+        <div class="container2">
+          <h4>Feito por: Pedro Rogério Silva &hearts; SPTech &copy; 2024</h4>
+          <span class="version">v1.0.0</span>
+        </div>
+      </div>
     
     
 </body>
@@ -65,9 +77,10 @@
     var senha = input_senha.value
     var tamanho_senha = senha.length
     if (tamanho_senha <  8){
-        mensagem = `<span style = "color : red"> A senha deve conter ao menos 8 caracteres </span>`
+        mensagem = `<span style = "color : yellow"> A senha deve conter ao menos 8 caracteres </span>`
     } else{
         mensagem = `ㅤ <br>ㅤ`
     } div_mensagem.innerHTML = mensagem
 }
+
 </script>
