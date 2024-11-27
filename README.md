@@ -4,10 +4,10 @@ criando uma comunidade respeitosa e saúdavel, para todos que estão participand
 ao mês, e após votar, seguindo para uma dashboard, que nela tem a dash contendo um gráfico de barras sobre a votação de cada um dos jogos, e com 3 kpis, uma de quantidade de votos, outra de
 com o 1° colocado e outra com um 2° colocado, para o usuário ter uma ideia sobre quais são os jogos que as pessoas daquela comunidade estão mais gostando e logicamente jogando.
 # Ferrmanetas Utilizadas
-HTML,CSS,JAVASCRIPT
-API: WEB DATA VIZ
-BANCO DE DADOS: WORKBENCH
-VIRTUAL MACHINE
-TRELLO
-BACKLOG
-DOCUMENTAÇÃO
+HTML,CSS,JAVASCRIPT <br>
+API: WEB DATA VIZ <br>
+BANCO DE DADOS: WORKBENCH <br>
+VIRTUAL MACHINE <br>
+TRELLO <br>
+BACKLOG <br>
+DOCUMENTAÇÃO <br>
