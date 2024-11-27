@@ -1,4 +1,4 @@
-# Projeto Indidual
+<style = "color : red"># Projeto Indidual </span>
 Sobre a Gammer Community, que é basicamente uma comunidade, aonde aos pessoas podem interagir com outras pessoas, com assuntos de jogos, criando laços entre as pessoas e
 criando uma comunidade respeitosa e saúdavel, para todos que estão participando, e nela também contêm um sistema de votação, que os usuários conseguem votar no seu jogo preferido, referente
 ao mês, e após votar, seguindo para uma dashboard, que nela tem a dash contendo um gráfico de barras sobre a votação de cada um dos jogos, e com 3 kpis, uma de quantidade de votos, outra de
